@@ -1,0 +1,118 @@
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+    font-size: 15px;
+    font-family: "Product Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    background-color: #f5f5f5;
+    color: #0D1113;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+}
+
+section {
+    width: 50%;
+    padding: 0 1.33rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 400;
+    font-size: 36px;
+    color: #757575;
+    margin: 1.5rem 0;
+}
+
+.gcdc {
+    background: #0d1113;
+}
+
+.gcdc h1 {
+    color: #fff;
+}
+
+.lockup {
+    height: 34px;
+    margin-right: 1rem;
+}
+
+.tags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0.33rem 0;
+    padding: 0;
+    list-style: none;
+}
+
+.tag {
+    display: block;
+    margin: 0 0.42rem 0.84rem 0.42rem;
+    padding: 0.66rem 1rem;
+    font-size: 1.066rem;
+    line-height: 1.033rem;
+    font-weight: 400;
+    background-color: #fff;
+    border-radius: 30px;
+    user-select: none;
+    box-shadow: rgba(0,0,0,0.0166) 1px 1px 0,
+                rgba(0,0,0,0.0166) 1px 1px 8px;
+}
+
+.btn {
+    color: #fff;
+    background-color: #1976d2;
+    text-decoration: none;
+    user-select: none;
+    font-size: 1.066rem;
+    line-height: 1.033rem;
+    font-weight: 300;
+    padding: 1rem 1.66rem;
+    border-radius: 6px;
+    margin: 2rem auto 0 auto;
+    box-shadow: rgba(0,0,0,0.0166) 1px 1px 0,
+                rgba(0,0,0,0.0166) 1px 1px 8px;
+}
+
+@media (max-width: 479px) {
+    main {
+        flex-direction: column;
+    }
+    section {
+        width: 100vw;
+        min-height: 50vh;
+    }
+    h1 {
+        font-size: 26px;
+    }
+    .lockup {
+        height: 24px;
+        margin-right: 0.66rem;
+    }
+    .tag {
+        padding: 0.5rem 0.8rem;
+        font-size: 0.9rem;
+        line-height: 0.9rem;
+    }
+    .btn {
+        padding: 0.833rem 1.33rem;
+        margin: 1.66rem auto 0 auto;
+    }
+}
